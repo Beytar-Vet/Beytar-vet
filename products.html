@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Products — BEYTAR</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="assets/favicon.png" type="image/png">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html"><img src="assets/logo.png" alt="BEYTAR logo"><span>BEYTAR</span></a>
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html" >Home</a>
+        <a href="about.html" >About</a>
+        <a href="products.html" class="active">Products</a>
+        <a href="contact.html" btn-outline>Contact</a>
+      </nav>
+      <div class="lang-switch">
+        <a href="ar/index.html">العربية</a>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">☰</button>
+    </div>
+  </header>
+
+  <main class="container">
+    
+<h1>Products Catalog</h1>
+<p>Browse our core categories and request a quote for any item.</p>
+
+<div class="product-grid">
+  <div class="product-card">
+    <img src="assets/prod-1.jpg" alt="">
+    <h3>Surgical Forceps</h3>
+    <p>Multiple sizes. Veterinary grade stainless steel.</p>
+    <div class="card-actions">
+      <a href="contact.html?product=Surgical%20Forceps" class="btn-secondary">Request Quote</a>
+      <a href="#" class="btn-outline">Download Spec</a>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <img src="assets/prod-2.jpg" alt="">
+    <h3>Veterinary Stethoscope</h3>
+    <p>Durable, clear sound for small and large animals.</p>
+    <div class="card-actions">
+      <a href="contact.html?product=Stethoscope" class="btn-secondary">Request Quote</a>
+      <a href="#" class="btn-outline">Download Spec</a>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <img src="assets/prod-3.jpg" alt="">
+    <h3>Disposable Syringes</h3>
+    <p>Sterile syringes in different volumes.</p>
+    <div class="card-actions">
+      <a href="contact.html?product=Disposable%20Syringes" class="btn-secondary">Request Quote</a>
+      <a href="#" class="btn-outline">Download Spec</a>
+    </div>
+  </div>
+</div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>BEYTAR</strong>
+        <p>Veterinary Medical Equipment — UAE</p>
+      </div>
+      <nav class="footer-links">
+        <a href="about.html">About</a>
+        <a href="products.html">Products</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+    <div class="container copyright">
+      <small>&copy; <span id="year"></span> BEYTAR. All rights reserved.</small>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('navToggle').addEventListener('click', function(){
+      document.getElementById('mainNav').classList.toggle('open');
+    });
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

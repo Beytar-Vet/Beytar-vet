@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About — BEYTAR</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="assets/favicon.png" type="image/png">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html"><img src="assets/logo.png" alt="BEYTAR logo"><span>BEYTAR</span></a>
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html" >Home</a>
+        <a href="about.html" class="active">About</a>
+        <a href="products.html" >Products</a>
+        <a href="contact.html" btn-outline>Contact</a>
+      </nav>
+      <div class="lang-switch">
+        <a href="ar/index.html">العربية</a>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">☰</button>
+    </div>
+  </header>
+
+  <main class="container">
+    
+<section class="about-hero">
+  <h1>About BEYTAR</h1>
+  <p>BEYTAR supplies veterinary medical instruments and disposables across the UAE. We focus on quality, regulatory compliance, and reliable local delivery.</p>
+</section>
+
+<section class="team">
+  <h2>Our Services</h2>
+  <ul>
+    <li>Veterinary surgical instruments</li>
+    <li>Disposable medical supplies</li>
+    <li>Private-label and OEM for clinics</li>
+    <li>Consulting on certifications and import</li>
+  </ul>
+</section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>BEYTAR</strong>
+        <p>Veterinary Medical Equipment — UAE</p>
+      </div>
+      <nav class="footer-links">
+        <a href="about.html">About</a>
+        <a href="products.html">Products</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+    <div class="container copyright">
+      <small>&copy; <span id="year"></span> BEYTAR. All rights reserved.</small>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('navToggle').addEventListener('click', function(){
+      document.getElementById('mainNav').classList.toggle('open');
+    });
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

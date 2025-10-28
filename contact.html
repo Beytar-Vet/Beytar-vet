@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — BEYTAR</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="assets/favicon.png" type="image/png">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html"><img src="assets/logo.png" alt="BEYTAR logo"><span>BEYTAR</span></a>
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html" >Home</a>
+        <a href="about.html" >About</a>
+        <a href="products.html" >Products</a>
+        <a href="contact.html" class="active btn-outline>Contact</a>
+      </nav>
+      <div class="lang-switch">
+        <a href="ar/index.html">العربية</a>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">☰</button>
+    </div>
+  </header>
+
+  <main class="container">
+    
+<h1>Contact Us</h1>
+<p>Prefer email? sales@beytar.ae — Or use the form below.</p>
+
+<form class="contact-form" action="mailto:sales@beytar.ae" method="post" enctype="text/plain">
+  <label>
+    Your name
+    <input type="text" name="name" required>
+  </label>
+  <label>
+    Email
+    <input type="email" name="email" required>
+  </label>
+  <label>
+    Company
+    <input type="text" name="company">
+  </label>
+  <label>
+    Message / Requirements
+    <textarea name="message" rows="6" required></textarea>
+  </label>
+  <div class="form-actions">
+    <button type="submit" class="btn-primary">Send Message</button>
+    <button type="reset" class="btn-outline">Clear</button>
+  </div>
+</form>
+
+<section class="contact-info">
+  <h2>Office</h2>
+  <p>Dubai, UAE — Office hours: Mon–Fri 9:00–17:00</p>
+  <p>Phone: +971 X XXX XXXX</p>
+</section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>BEYTAR</strong>
+        <p>Veterinary Medical Equipment — UAE</p>
+      </div>
+      <nav class="footer-links">
+        <a href="about.html">About</a>
+        <a href="products.html">Products</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+    <div class="container copyright">
+      <small>&copy; <span id="year"></span> BEYTAR. All rights reserved.</small>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('navToggle').addEventListener('click', function(){
+      document.getElementById('mainNav').classList.toggle('open');
+    });
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
